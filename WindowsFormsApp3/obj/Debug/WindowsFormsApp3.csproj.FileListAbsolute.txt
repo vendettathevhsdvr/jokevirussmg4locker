@@ -1,0 +1,10 @@
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\SMG4Cheat.exe.config
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\SMG4Cheat.exe
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\SMG4Cheat.pdb
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\SMG4Cheat.exe
+C:\Users\Мастер\source\repos\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\SMG4Cheat.pdb
