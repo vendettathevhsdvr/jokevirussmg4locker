@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>WA.ico</ApplicationIcon>
+    <ApplicationIcon>0305650d94e32c656ec55309a8467b4c.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -121,6 +121,7 @@
     <None Include="Resources\big2.wav" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="0305650d94e32c656ec55309a8467b4c.ico" />
     <Content Include="dota_icon_245653.ico" />
     <Content Include="WA.ico" />
   </ItemGroup>

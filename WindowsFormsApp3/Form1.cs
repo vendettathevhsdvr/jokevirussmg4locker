@@ -90,12 +90,12 @@ namespace WindowsFormsApp3
                 byebye_exp.Arguments = @"/k taskkill /f /im SMG4Cheat.exe";
                 Process.Start(byebye_exp);
                 RegistryKey regkey;
-                string keyValueInt = "0";
+                string keyValueInt = "1";
                 string subKey = "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
                 try
                 {
                     regkey = Registry.CurrentUser.CreateSubKey(subKey);
-                    regkey.SetValue("DisableTaskMgr", keyValueInt);
+                    regkey.SetValue("EnableTaskMgr", keyValueInt);
                     regkey.Close();
                 }
                 catch (Exception ex)
